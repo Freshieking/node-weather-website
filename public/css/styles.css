@@ -1,0 +1,73 @@
+/* changes the colour of all h1 to pink */
+
+
+
+/* modifying img on about.html */
+
+img {
+    width: 750px;
+}
+
+body{
+    color: #333;;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    /* making a sticky footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.main-content{
+    flex-grow: 1
+;}
+
+footer{
+    color: #888;
+    border-top: 1px solid lightgray;
+    margin-top: 16px;
+    padding: 16 0;
+}
+
+
+header {
+    margin-top: 16;
+    margin-bottom: 48;
+    
+}
+
+h1{
+    font-size: 64;
+    margin-bottom: 16;
+}
+
+header a {
+    color: green;
+    margin-right: 16px;
+    text-decoration: none;
+    }
+
+    /* apply a style to a specific thing by assigning a class */
+.portrait {
+    width: 120px;
+
+}
+
+input{
+    border-width: 3px;
+    border-color: deeppink;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    border-width: 4px;
+    border-color: dodgerblue;
+    margin-left: 25px;
+    cursor: pointer;
+
+    }

@@ -1,0 +1,46 @@
+<!-- initialize html file -->
+
+<html>
+
+<head>
+    <title>weather</title>
+
+<!-- linking stylesheet, rel = relationship -->
+<!-- href is path to file we wanna use, its relative so absolute start in this case would be public not from root-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="/img/weather.png">
+
+
+</head>
+
+<body>
+<div class="main-content">
+    {{>header}}
+<p>Use this site to get your weather</p>
+
+<form action="">
+    <input placeholder="Location">
+    <button>Search</button>
+</form>
+
+{{!-- am ID will allow us to target this specific "p" and not worry about selecting the wrong one --}}
+<p id="messageOne"></p>
+
+
+<p id="messageTwo"></p>
+
+
+</div>
+
+{{!-- to Inject values into the hbs file format we do {{}} 2 curly brackets --}}
+
+{{>footer}}       
+
+    <script src="/js/app.js"></script>
+{{!-- you must load script in at the bottom so that all the values are assingned  --}}
+</body>
+
+
+
+
+</html>

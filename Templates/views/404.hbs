@@ -1,0 +1,31 @@
+<!-- initialize html file -->
+
+<html>
+
+<head>
+        <title>404</title>
+
+<!-- linking stylesheet, rel = relationship -->
+<!-- href is path to file we wanna use, its relative so absolute start in this case would be public not from root-->
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+</head>
+
+<body>
+    {{!-- using the flex thing we made earlier to make a sticky footer --}}
+     <div class="main-content">
+        {{>header}}
+        <p>{{error}}</p>    
+    </div>
+
+
+
+{{!-- to Inject values into the hbs file format we do {{}} 2 curly brackets --}}
+    {{>footer}}                 
+</body>
+
+
+
+
+</html>
