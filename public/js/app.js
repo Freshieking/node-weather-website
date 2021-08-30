@@ -60,6 +60,5 @@ weatherForm.addEventListener('submit',(e)=>{
 
 
 
-    console.log("shutup");
 })
 console.log(weatherForm);
