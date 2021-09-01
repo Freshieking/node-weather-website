@@ -58,7 +58,6 @@ weatherForm.addEventListener('submit',(e)=>{
     }
 
 
-// dasddsa
 
 })
 console.log(weatherForm);
