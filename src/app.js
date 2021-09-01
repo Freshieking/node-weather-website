@@ -183,6 +183,6 @@ app.get('/*', (req,res) => {
 
 
 //booting up server on port 3000
-app.listen(3000,() => {
+app.listen(port,() => {
     console.log(`server up bozo ${port}`);
 })
