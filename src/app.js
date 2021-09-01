@@ -4,6 +4,9 @@ const hbs = require('hbs');
 const geocode = require('./utils/geocode')
 const forecast = require("./utils/forecast")
 
+
+
+
 // Prints path to dir eg C:\Users\Dylan\Documents\Dylans work\Mosh\web-server\src
 // console.log(__dirname);
 
@@ -21,6 +24,12 @@ const partialsPath = path.join(__dirname, '../Templates/partials')
 
 //generating express application
 const app = express()
+
+//the port that heroku will run on
+const port = process.env.PORT || 3000
+// by doing || its a logical "or" operator so it will set port as the process value OR as 3000 this is needed as heroku sets its own port
+// and we need a static port for local use
+
 
 //allows you to set a value ("view engine") and then the module. it must be 1:1 with express
 app.set('view engine', 'hbs')
@@ -175,5 +184,5 @@ app.get('/*', (req,res) => {
 
 //booting up server on port 3000
 app.listen(3000,() => {
-    console.log('server up bozo');
+    console.log(`server up bozo ${port}`);
 })
