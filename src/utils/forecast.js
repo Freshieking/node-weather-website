@@ -11,7 +11,7 @@ const forecast =  (long, lat, callback) =>{
              callback('Invalid location', undefined);
              //// error found so fdata from callback is left as undefined
       }
-      else{callback(undefined, `It is currently ${body.current.temperature} degrees out feeling like a ${body.current.feelslike} degrees, issa ${body.current.weather_descriptions[0]} day`);
+      else{callback(undefined, `It is currently ${body.current.temperature} degrees out feeling like a ${body.current.feelslike} degrees, issa ${body.current.weather_descriptions[0]} day. The time at observation was ${body.current.observation_time}`);
         // no error so error is "undefined" and "fdata" is called back 
   
       }
